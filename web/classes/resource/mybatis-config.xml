@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <mappers>
+        <mapper resource="test/dao/UserMapperSelect.xml"/>
+        <mapper resource="test/dao/UserMapperInsert.xml"/>
+        <mapper resource="test/dao/UserMapperUpdate.xml"/>
+        <mapper resource="test/dao/UserMapperDelete.xml"/>
+    </mappers>
+</configuration>

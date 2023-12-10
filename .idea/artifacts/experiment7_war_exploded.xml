@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="experiment7:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/experiment7_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="experiment7" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="libs2" />
+          <element id="library" level="application" name="mybatis-3.5" />
+          <element id="library" level="application" name="mybatis-spring-1.3.1" />
+          <element id="library" level="application" name="commons-dbcp2-2.7.0" />
+          <element id="library" level="application" name="commons-logging-1" />
+          <element id="library" level="application" name="commons-pool2-2.5.0" />
+          <element id="library" level="application" name="JDBC" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="experiment7/web/Web" />
+    </root>
+  </artifact>
+</component>
