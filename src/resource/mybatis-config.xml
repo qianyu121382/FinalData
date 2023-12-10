@@ -4,6 +4,9 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <mappers>
-        <mapper resource="resource/UserMapper.xml"/>
+        <mapper resource="test/dao/UserMapperSelect.xml"/>
+        <mapper resource="test/dao/UserMapperInsert.xml"/>
+        <mapper resource="test/dao/UserMapperUpdate.xml"/>
+        <mapper resource="test/dao/UserMapperDelete.xml"/>
     </mappers>
 </configuration>
