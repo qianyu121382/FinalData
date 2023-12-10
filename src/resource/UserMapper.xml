@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="test.dao.UseDao">
+    <select id="selectAccount" parameterType="test.entity.Account" resultType="test.entity.Account">
+        select * from account where userName=#{userName} and password=#{password}
+    </select>
+    <select id="selectAccountByUserName" parameterType="String" resultType="test.entity.Account">
+        select * from account where userName=#{userName}
+    </select>
+    <select id="selectLiuyanByUserName" parameterType="String" resultType="test.entity.Account">
+        select * from liuyan where userName=#{userName}
+    </select>
+    <insert id="insertLiuYan" parameterType="test.entity.Liuyan" keyProperty="id" useGeneratedKeys="true">
+        insert into liuyan (userName, topic, text,time)
+        values (#{userName}, #{topic}, #{text},#{time})
+    </insert>
+</mapper>
